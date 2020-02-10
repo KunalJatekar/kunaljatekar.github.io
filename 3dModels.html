@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Kunal M. Jatekar</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139429182-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139429182-2');
+</script>
+</head>
+<style>
+
+.floating-label-form-group {
+    position: relative;
+    border-bottom: none;
+}
+
+.masthead .masthead-subheading {
+    font-size:2.0rem;
+}
+
+.lead {
+	text-align: justify;
+}
+
+.bg-primary {
+    background-color: #2f91a6 !important;
+}
+
+.navbar {
+    border-radius: 4px;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.text-primary {
+    color: #2f91a6 !important;
+}
+
+.header {
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    /* -webkit-box-pack: justify; */
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+	width:100%;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 5px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: -10px;
+    font-size: 2rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.carousel-control.left {
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.carousel-indicators {
+   width: auto;
+}
+
+.carousel-indicators .active {
+    width: 8px;
+    height: 8px;
+    padding: 5px;
+	border-radius: 40px;
+    background-color: #fff;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: #2f91a6;
+    border: 1px solid #fff;
+    border-radius: 10px;
+	padding: 5px;
+}
+
+.carousel-indicators {
+    bottom: -25px;
+}
+
+.carousel-control {
+    width: 1%;
+}
+
+.carousel-control.right {
+    right: -18px;
+}
+
+.img {
+	margin-top:25%;
+	width: 55%;
+	border-radius: 50%;
+}
+
+a {
+    color: #75a59c;
+    text-decoration: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+	font-weight:600;
+	padding: 14px 16px;
+}
+
+.topnav a:hover {
+  color: black;
+  font-weight:600;
+}
+
+.topnav a.active {
+  color: white;
+  font-weight:600;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav.responsive a .float {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+}
+
+a:hover {
+    color: #117964;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: 5px !important;
+    outline-offset: -2px;
+}
+
+
+
+
+</style>
+
+<body id="page-top">
+	<div id="menubar-title" class="header">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="resume/Kunal_Resume.pdf" target="_blank">Resume</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</div>
+		<!-- Portfolio Section -->
+		<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
+			<div class="container-fluid">
+				<!-- Portfolio Section Heading -->
+				<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">3d Models</h1>
+
+				<!-- Icon Divider -->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+						<div class="divider-custom-icon">
+						  <i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+					<div class="divider-custom-line"></div>
+				</div>
+                <!-- Portfolio Modal - Image -->
+				<!--Carousel Wrapper-->
+				<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" style="padding: 5%;">
+					<!--Indicators-->
+					<ol class="carousel-indicators">
+						<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+						<li data-target="#multi-item-example" data-slide-to="1"></li>
+						<li data-target="#multi-item-example" data-slide-to="2"></li>
+						<li data-target="#multi-item-example" data-slide-to="3"></li>
+						<li data-target="#multi-item-example" data-slide-to="4"></li>
+						<li data-target="#multi-item-example" data-slide-to="5"></li>
+					</ol>
+					<!--/.Indicators-->
+					<!--Slides-->
+					<div class="carousel-inner" role="listbox">
+						<!--First slide-->
+						<div class="carousel-item active">
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Bottle_Model.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Environment_1.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<!--/.First slide-->
+						<!--Second slide-->
+						<div class="carousel-item">
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Environment_3.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/GlassModel.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<!--/.Second slide-->
+						<!--Third slide-->
+						<div class="carousel-item">
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Hen_Shed_1.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Hen_Shed.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/House.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/House_1.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="carousel-item">
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Water_Tank.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="card mb-2">
+								<img class="card-img-top" src="img/portfolio/Sample 3D Model/Water_Tank_1.jpg" style="height: 350px;"
+								  alt="Card image cap">
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<!--/.Third slide-->
+					  </div>
+					  <!--/.Slides-->
+					</div>
+					<!--/.Carousel Wrapper-->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+						<div class="divider-custom-icon">
+						  <i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+					<div class="divider-custom-line"></div>
+				</div>
+			</div>
+		</section>
+		  
+		<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
+			<div class="container">
+			  <small>Copyright ©2019 All rights reserved | Kunal M. Jatekar Game Designer & Developer</small>
+			</div>
+		</section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+  <script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	</script>
+
+</body>
+
+</html>
